@@ -123,7 +123,7 @@ def extract_landmarks(data):
     landmarks = []
     i = 0
     detector = dlib.get_frontal_face_detector()
-    predictor = dlib.shape_predictor("./shape_predictor_68_face_landmarks.dat")
+    predictor = dlib.shape_predictor("./files/shape_predictor_68_face_landmarks.dat")
     for (i,image) in enumerate(data):
         rects = detector(image, 1)
         for (j, rect) in enumerate(rects):
