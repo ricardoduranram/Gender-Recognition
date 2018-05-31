@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import face
 import cv2
 
-dataset = np.load("faces(1,-1).npy").item()
+dataset = np.load("./files/faces(1,-1).npy").item()
 train_samples = dataset["images_train"]
 train_labels = dataset["labels_train"]
 test_samples = dataset["images_test"]
