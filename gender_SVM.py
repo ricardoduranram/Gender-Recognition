@@ -8,7 +8,7 @@ import util
 
 (x_train,y_train,x_test,y_test) = np.load("./files/face_features2.npy")
 
-image_set = np.load("faces(1,-1).npy").item()
+image_set = np.load("./files/faces(1,-1).npy").item()
 images_test = image_set["images_test"]
 labels_test = image_set["labels_test"]
 
